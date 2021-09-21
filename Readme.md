@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Кикин](https://up.htmlacademy.ru/htmlcss/32/user/1914923).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
