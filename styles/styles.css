@@ -1,11 +1,11 @@
 .main-index {
-  background: url("../img/index/index-background.jpg") no-repeat;
+  background: url("../img/mountain.jpg") no-repeat;
 }
 
 .main-inner {
-  background: url("../img/catalog/catalog-background.jpg") no-repeat;
+  background: url("../img/mountain-blur.jpg") no-repeat;
 }
 
 .subscription {
-  background-image: url("../img/background-subscr.jpg");
+  background-image: url("../img/valley-blur.jpg");
 }
