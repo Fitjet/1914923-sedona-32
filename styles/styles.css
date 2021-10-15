@@ -1,11 +1,256 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400px;
+  src: url(../fonts/ptsans-400.woff2) format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700px;
+  src: url(../fonts/ptsans-700.woff2) format(woff2);
+  font-display: swap;
+}
+
+html {
+  padding: 0px 40px;
+  background-color: #E5E5E5;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* background */
+
 .main-index {
   background: url("../img/mountain.jpg") no-repeat;
+  background-size: 100% auto;
 }
 
 .main-inner {
   background: url("../img/mountain-blur.jpg") no-repeat;
+  background-size: 100% auto;
 }
 
 .subscription {
-  background-image: url("../img/valley-blur.jpg");
+  background: url("../img/valley-blur.jpg") no-repeat;
+  background-size: 100% auto;
+}
+
+/* link */
+
+a {
+  text-decoration: none;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* title */
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.greeting-title,
+.hotels-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.subscription-title {
+  font-weight: 700;
+  font-size: 30px;
+  font-weight: 36px;
+  text-transform: uppercase;
+}
+
+.inner-headder-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.sorting {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333;
+}
+
+.sorting-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000;
+}
+
+/* description */
+
+.greeting-description {
+  line-height: 36px;
+  color: #333;
+}
+
+.advantages-description,
+.advantages-number {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-number {
+  text-transform: uppercase;
+}
+
+.hotels-description {
+  color: #333;
+}
+
+.control-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.product-card-type,
+.product-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333;
+}
+
+.product-card-rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+/* list */
+
+.advantages-list,
+.page-greeting,
+.hotels,
+.subscription {
+  text-align: center;
+}
+
+.white-text>.advantages-title,
+.white-text {
+  color: #fff;
+}
+
+.advantages-item.white-text {
+  background-color: #83B3D3;
+}
+
+/* button */
+
+.button,
+.pagination-link {
+  font-family: inherit;
+  background: #756257;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+}
+
+.hotels-link {
+  font-size: 20px;
+  line-height: 36px;
+  border-radius: 10px;
+}
+
+.subscription-button {
+  background: #83B3D3;
+  width: 200px;
+  height: 60px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.catalog-filter-select,
+.product-card-favourites,
+.pagination-link,
+.product-button-more {
+  background: #83B3D3;
+}
+
+.catalog-filter-reset {
+  background: none;
+}
+
+.button-favourites-added {
+  background: #7DB54F;
+}
+
+.pagination-current {
+  background: #f2f2f2;
+  color: #000;
+}
+
+/* input */
+
+.subscription-input {
+  background: #F2F2F2;
+  width: 600px;
+  height: 60px;
+  border-radius: 10px 0px 0px 10px;
+  border: 0;
+}
+
+/* footer */
+
+
+.footer-contacts-number {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
 }

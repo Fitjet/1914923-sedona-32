@@ -46,19 +46,19 @@
 
   <main class="main-index">
     <h1 class="visually-hidden">Туристический сайт города Седона</h1>
-    <img class="logo" src="img/greeting-text.svg" width="458" height="352" alt="Приветствие: Добро пожаловать в великолепный городок Седона. Потому что Гранд Каньон отстой.">
-    <section class="page-title">
-      <h2>
-        Седона — небольшой городок в Аризоне,
+    <section class="page-greeting">
+      <img class="logo greeting-text" src="img/greeting-text.svg" width="458" height="352" alt="Приветствие: Добро пожаловать в великолепный городок Седона. Потому что Гранд Каньон отстой.">
+      <h2 class="greeting-title">
+        Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!
       </h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <p class="greeting-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages-list">
-        <li class="advantages-item">
+        <li class="advantages-item white-text">
           <h3 class="advantages-title">Настоящий городок</h3>
           <p class="advantages-number">— №1 —</p>
           <p class="advantages-description">
@@ -66,6 +66,8 @@
             для туристов, там течёт
             своя жизнь
           </p>
+        </li>
+        <li class="advantages-item advantages-img">
           <img class="advantages-img" src="img/sedona-town.jpg" width="800" height="384" alt="Вид на городок. Дом для отпуска open range.">
         </li>
         <li class="advantages-item">
@@ -95,8 +97,10 @@
             производства!
           </p>
         </li>
-        <li class="advantages-item">
+        <li class="advantages-item advantages-img">
           <img class="advantages-img" src="img/devils-bridge.jpg" width="800" height="384" alt="Мост Дьявола в красных скалах">
+        </li>
+        <li class="advantages-item white-text">
           <h3 class="advantages-title">Там есть мост дьявола</h3>
           <p class="advantages-number">— №2 —</p>
           <p class="advantages-description">
@@ -135,22 +139,22 @@
     <section class="hotels">
       <h2 class="hotels-title">Заинтересовались?</h2>
       <p class="hotels-description">
-        Укажите предполагаемые даты поездки,
+        Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <a class="hotels-link button" href="#">Поиск гостиницы в Седоне</a>
     </section>
 
-    <section class="subscription">
+    <section class="subscription white-text">
       <h2 class="subscription-title">Подпишитесь на рассылку</h2>
       <p class="subscription-description">
-        Только полезная информация и никакого спама,
+        Только полезная информация и никакого спама,<br>
         честное бойскаутское!
       </p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="POST">
         <label class="visually-hidden" for="subscription-email">Email</label>
         <input class="subscription-input" type="email" name="subscription-email" placeholder="Ваш e-mail">
-        <button class="subscription-button" type="submit">Подписаться</button>
+        <button class="subscription-button button" type="submit">Подписаться</button>
       </form>
     </section>
 
@@ -187,7 +191,7 @@
     <section class="footer-htmlacademy">
       <h2 class="visually-hidden">Сделано в .html academy</h2>
       <a class="footer-link-htmlacademy" href="https://htmlacademy.ru/">
-        <img class="footer-logo-htmlacademy" src="img/logo_htmlacademy.svg" width="115" height="34" alt="Перейти на сайт htmlacademy.ru">
+        <img class="footer-logo-htmlacademy" src="img/logo-htmlacademy.svg" width="115" height="34" alt="Перейти на сайт htmlacademy.ru">
       </a>
     </section>
   </footer>
