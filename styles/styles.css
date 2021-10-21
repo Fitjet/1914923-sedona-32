@@ -14,18 +14,22 @@
   font-display: swap;
 }
 
-html {
-  padding: 0px 40px;
+body {
+  font-family: "PT Sans", sans-serif, Arial;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000;
   background-color: #E5E5E5;
 }
 
-body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 22px;
-  line-height: 26px;
-  color: #333;
+body:nth-child(n) {
+  width: 1200px;
   background-color: #fff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
 }
 
 /* background */
@@ -40,22 +44,19 @@ body {
   background-size: 100% auto;
 }
 
-.subscription {
+.subscription-bg {
   background: url("../img/valley-blur.jpg") no-repeat;
   background-size: 100% auto;
+  color: #fff;
 }
 
 /* link */
-
-a {
-  text-decoration: none;
-}
 
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
-  color: #000;
+  color: inherit;
 }
 
 .breadcrumbs-link {
@@ -63,39 +64,32 @@ a {
   line-height: 21px;
 }
 
-/* title */
-
-.advantages-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: #000;
+.pagination-link {
+  font-size: 20px;
+  line-height: 26px;
 }
 
-.greeting-title,
-.hotels-title {
+/* title */
+
+.title-bold {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #000;
 }
 
-.subscription-title {
-  font-weight: 700;
-  font-size: 30px;
-  font-weight: 36px;
-  text-transform: uppercase;
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .inner-headder-title {
+  text-transform: none;
   font-size: 60px;
   line-height: 78px;
 }
 
 .catalog-filter-title {
-  font-weight: 700;
   font-size: 20px;
 }
 
@@ -106,31 +100,28 @@ a {
 }
 
 .sorting-title {
-  font-weight: 700;
-  font-size: 30px;
   line-height: 39px;
-  text-transform: uppercase;
   color: #000;
 }
 
 .product-card-title {
-  font-weight: 700;
+  text-transform: none;
   font-size: 24px;
   line-height: 31px;
-  color: #000;
 }
 
 /* description */
 
-.greeting-description {
-  line-height: 36px;
+.descriptions {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
   color: #333;
 }
 
-.advantages-description,
-.advantages-number {
-  font-size: 18px;
-  line-height: 21px;
+.greeting-description {
+  line-height: 36px;
+  color: #333;
 }
 
 .advantages-number {
@@ -142,45 +133,38 @@ a {
 }
 
 .control-label {
-  font-size: 18px;
   line-height: 23px;
-}
-
-.product-card-type,
-.product-card-price {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  color: #333;
+  color: #fff;
 }
 
 .product-card-rating {
-  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  text-align: center;
   text-transform: uppercase;
-  color: #333;
   background-color: #F2F2F2;
   border-radius: 4px;
 }
 
+.subscription-description-inner {
+  color: #333;
+}
+
 /* list */
 
-.advantages-list,
-.page-greeting,
-.hotels,
-.subscription {
+.txtaln-center {
   text-align: center;
 }
 
-.white-text>.advantages-title,
 .white-text {
   color: #fff;
 }
 
-.advantages-item.white-text {
-  background-color: #83B3D3;
+.ease-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.light-blue {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 /* button */
@@ -188,7 +172,7 @@ a {
 .button,
 .pagination-link {
   font-family: inherit;
-  background: #756257;
+  background-color: #756257;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -198,6 +182,7 @@ a {
   text-decoration: none;
   color: #fff;
   border: 0;
+  margin: 0;
 }
 
 .hotels-link {
@@ -207,17 +192,11 @@ a {
 }
 
 .subscription-button {
-  background: #83B3D3;
-  width: 200px;
-  height: 60px;
   border-radius: 0px 10px 10px 0px;
 }
 
-.catalog-filter-select,
-.product-card-favourites,
-.pagination-link,
-.product-button-more {
-  background: #83B3D3;
+.blue-bg {
+  background-color: #83B3D3;
 }
 
 .catalog-filter-reset {
@@ -225,32 +204,28 @@ a {
 }
 
 .button-favourites-added {
-  background: #7DB54F;
+  background-color: #7DB54F;
 }
 
 .pagination-current {
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   color: #000;
 }
 
 /* input */
 
 .subscription-input {
-  background: #F2F2F2;
-  width: 600px;
-  height: 60px;
+  background-color: #F2F2F2;
   border-radius: 10px 0px 0px 10px;
   border: 0;
+  margin: 0;
 }
 
 /* footer */
-
 
 .footer-contacts-number {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
-  color: #000;
 }
