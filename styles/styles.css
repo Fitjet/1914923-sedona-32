@@ -1,7 +1,7 @@
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  font-weight: 400px;
+  font-weight: 400;
   src: url(../fonts/ptsans-400.woff2) format(woff2);
   font-display: swap;
 }
@@ -15,11 +15,15 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif, Arial;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000;
   background-color: #E5E5E5;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrapper {
@@ -27,10 +31,6 @@ body {
   background-color: #fff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* background */
