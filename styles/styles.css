@@ -31,22 +31,17 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
-ul {
+.clear-list {
   margin: 0;
   padding: 0;
-}
-
-ol {
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 
 .wrapper {
-  display: inherit;
-  min-height: inherit;
+  display: flex;
+  min-height: 100%;
   flex-direction: column;
   width: 1200px;
   background-color: #fff;
@@ -58,29 +53,25 @@ ol {
   flex-grow: 1;
 }
 
-/* flex */
+/* placement */
 
 .navigation {
   display: flex;
 }
 
+.navigation-main {
+  width: 420px;
+  margin-right: 50px;
+}
+
+.navigation-user {
+  width: 300px;
+  margin-left: auto;
+}
+
 .greeting-text {
   display: block;
   margin: 0 auto;
-}
-
-.footer-social {
-  width: 107px;
-  margin-right: 61px;
-}
-
-.footer-contacts {
-  width: 720px;
-  text-align: center;
-}
-
-.footer-htmlacademy {
-  margin-left: auto;
 }
 
 .page-header {
@@ -95,22 +86,23 @@ ol {
   padding: 0 200px;
 }
 
-.navigation-list {
-  width: 420px;
-}
-
-.navigation-main {
-  margin-right: 50px;
-}
-
-.navigation-user {
-  width: 300px;
-  margin-left: auto;
-}
-
 .page-footer {
   display: flex;
   padding: 0 72px;
+}
+
+.footer-contacts {
+  width: 720px;
+  text-align: center;
+}
+
+.footer-htmlacademy {
+  margin-left: auto;
+}
+
+.footer-social {
+  width: 107px;
+  margin-right: 61px;
 }
 
 /* background */
@@ -139,11 +131,13 @@ ol {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
+  color: #000;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
+  color: #fff;
 }
 
 .pagination-link {
@@ -315,4 +309,5 @@ ol {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  color: #000;
 }
