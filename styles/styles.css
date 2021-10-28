@@ -9,35 +9,112 @@
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  font-weight: 700px;
+  font-weight: 700;
   src: url(../fonts/ptsans-700.woff2) format(woff2);
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  min-height: 100%;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000;
   background-color: #E5E5E5;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
+  display: inherit;
+  min-height: inherit;
+  flex-direction: column;
   width: 1200px;
   background-color: #fff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+/* flex */
+
+.navigation {
+  display: flex;
+}
+
+.greeting-text {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-social {
+  width: 107px;
+  margin-right: 61px;
+}
+
+.footer-contacts {
+  width: 720px;
+  text-align: center;
+}
+
+.footer-htmlacademy {
+  margin-left: auto;
+}
+
+.page-header {
+  padding: 0 71px 0 72px;
+}
+
+.index-block-padding {
+  padding: 0 240px;
+}
+
+.navigation-list {
+  width: 420px;
+}
+
+.navigation-main {
+  margin-right: 50px;
+}
+
+.navigation-user {
+  width: 300px;
+  margin-left: auto;
+}
+
+.page-footer {
+  display: flex;
+  padding: 0 72px;
+}
+
 /* background */
 
-.main-index {
+.page-greeting-bg {
   background: url("../img/mountain.jpg") no-repeat;
   background-size: 100% auto;
+  height: 485px;
 }
 
 .main-inner {
@@ -48,6 +125,7 @@ a {
 .subscription-bg {
   background: url("../img/valley-blur.jpg") no-repeat;
   background-size: 100% auto;
+  height: 411px;
   color: #fff;
 }
 
@@ -57,7 +135,6 @@ a {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
-  color: inherit;
 }
 
 .breadcrumbs-link {
@@ -166,6 +243,11 @@ a {
 
 .light-blue {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
 }
 
 /* button */
