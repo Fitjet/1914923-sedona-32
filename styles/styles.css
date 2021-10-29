@@ -74,16 +74,29 @@ a {
   margin: 0 auto;
 }
 
+.page-greeting {
+  text-align: center;
+}
+
 .page-header {
-  padding: 0 71px 0 72px;
+  padding: 0 71px;
 }
 
 .index-block-padding {
   padding: 0 240px;
 }
 
+.advantages-list {
+  text-align: center;
+}
+
+.hotels {
+  text-align: center;
+}
+
 .subscription {
   padding: 0 200px;
+  text-align: center;
 }
 
 .page-footer {
@@ -110,7 +123,8 @@ a {
 .page-greeting-bg {
   background: url("../img/mountain.jpg") no-repeat;
   background-size: 100% auto;
-  height: 485px;
+  padding: 51px 371px 82px 371px;
+  text-align: center;
 }
 
 .main-inner {
@@ -121,7 +135,7 @@ a {
 .subscription-bg {
   background: url("../img/valley-blur.jpg") no-repeat;
   background-size: 100% auto;
-  height: 411px;
+  padding: 93px 200px;
   color: #fff;
 }
 
@@ -227,10 +241,6 @@ a {
 
 /* list */
 
-.txtaln-center {
-  text-align: center;
-}
-
 .white-text {
   color: #fff;
 }
@@ -241,11 +251,6 @@ a {
 
 .light-blue {
   background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-list {
-  margin: 0;
-  padding: 0;
 }
 
 /* button */
