@@ -56,15 +56,11 @@ a {
 /* placement */
 
 .inbody-padding {
-  padding: 0 72px;
+  margin: 0 72px;
 }
 
 .index-block-padding {
   padding: 0 240px;
-}
-
-.hr-margin {
-  margin: 30px 0;
 }
 
 .navigation {
@@ -107,6 +103,21 @@ a {
   display: flex;
 }
 
+.product-card {
+  padding: 28px 0 30px;
+  border-top: 2px solid #E6E6E6;
+}
+
+.product-more {
+  padding: 30px 215px;
+  border-top: 2px solid #E6E6E6;
+}
+
+.pagination {
+  padding: 30px 0;
+  border-top: 2px solid #E6E6E6;
+}
+
 .page-footer {
   display: flex;
 }
@@ -130,14 +141,14 @@ a {
 .page-greeting-bg {
   background: url("../img/mountain.jpg") no-repeat;
   background-size: 100% auto;
-  padding: 51px 371px 82px 371px;
+  padding: 51px 371px 82px;
   text-align: center;
 }
 
 .catalog-bg {
   background: url("../img/mountain-blur.jpg") no-repeat;
   background-size: 100% auto;
-  padding: 35px 72px 83px 72px;
+  padding: 35px 72px 83px;
 }
 
 .subscription-bg {
@@ -197,7 +208,7 @@ a {
   font-size: 18px;
   line-height: 23px;
   color: #333;
-  padding: 44px 72px 0;
+  padding: 44px 72px 42px;
 }
 
 .sorting-title {
