@@ -79,6 +79,99 @@ a {
   color: #333;
 }
 
+/* colors */
+
+.white-text {
+  color: #fff;
+}
+
+.ease-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.light-blue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.blue-bg {
+  background-color: #83b3d3;
+}
+
+/* button */
+
+.button,
+.pagination-link {
+  font-family: inherit;
+  background-color: #756257;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+  margin: 0;
+}
+
+.subscription-button {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.hotels-link {
+  font-size: 20px;
+  line-height: 36px;
+  border-radius: 10px;
+}
+
+.catalog-filter-reset {
+  background: none;
+}
+
+.sorting-button-icon {
+  display: block;
+  padding: 15px 14px;
+  width: 16px;
+  height: 14px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.sorting-button-selected {
+  border-color: #000;
+}
+
+.button-favourites-added {
+  background-color: #7db54f;
+}
+
+.pagination-current {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+/* background */
+
+.page-greeting-bg {
+  background: url("../img/mountain.jpg") no-repeat;
+  background-size: 100% auto;
+  padding: 51px 0 82px;
+}
+
+.catalog-bg {
+  background: url("../img/mountain-blur.jpg") no-repeat;
+  background-size: 100% auto;
+  padding: 35px 72px 83px;
+}
+
+.subscription-bg {
+  background: url("../img/valley-blur.jpg") no-repeat;
+  background-size: 100% auto;
+  padding: 93px 200px;
+  color: #fff;
+}
+
 /* total */
 
 .page-header {
@@ -398,97 +491,4 @@ a {
 
 .subscription-description-inner {
   color: #333;
-}
-
-/* colors */
-
-.white-text {
-  color: #fff;
-}
-
-.ease-blue {
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
-.light-blue {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.blue-bg {
-  background-color: #83b3d3;
-}
-
-/* button */
-
-.button,
-.pagination-link {
-  font-family: inherit;
-  background-color: #756257;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-  border: 0;
-  margin: 0;
-}
-
-.subscription-button {
-  border-radius: 0px 10px 10px 0px;
-}
-
-.hotels-link {
-  font-size: 20px;
-  line-height: 36px;
-  border-radius: 10px;
-}
-
-.catalog-filter-reset {
-  background: none;
-}
-
-.sorting-button-icon {
-  display: block;
-  padding: 15px 14px;
-  width: 16px;
-  height: 14px;
-  border: 2px solid #e6e6e6;
-  border-radius: 4px;
-}
-
-.sorting-button-selected {
-  border-color: #000;
-}
-
-.button-favourites-added {
-  background-color: #7db54f;
-}
-
-.pagination-current {
-  background-color: #f2f2f2;
-  color: #000;
-}
-
-/* background */
-
-.page-greeting-bg {
-  background: url("../img/mountain.jpg") no-repeat;
-  background-size: 100% auto;
-  padding: 51px 0 82px;
-}
-
-.catalog-bg {
-  background: url("../img/mountain-blur.jpg") no-repeat;
-  background-size: 100% auto;
-  padding: 35px 72px 83px;
-}
-
-.subscription-bg {
-  background: url("../img/valley-blur.jpg") no-repeat;
-  background-size: 100% auto;
-  padding: 93px 200px;
-  color: #fff;
 }
