@@ -323,6 +323,7 @@ a {
 }
 
 .navigation-user {
+  align-items: center;
   width: 300px;
   margin-left: auto;
 }
@@ -332,7 +333,7 @@ a {
 }
 
 .navigation-user-item {
-  margin: 13.5px 0;
+  margin: 0;
   min-width: 38px;
   min-height: 38px;
 }
@@ -464,6 +465,7 @@ a {
 
 .sorting-type-form {
   display: flex;
+  align-items: center;
   width: 386px;
 }
 
@@ -487,13 +489,14 @@ a {
 }
 
 .footer-social {
+  display: flex;
+  align-items: center;
   width: 200px;
 }
 
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 15px 0;
 }
 
 .footer-social-item {
