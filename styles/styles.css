@@ -25,18 +25,12 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   margin: 0;
 }
 
 a {
   text-decoration: none;
-}
-
-.clear-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .wrapper {
@@ -64,30 +58,43 @@ a {
   overflow: hidden;
 }
 
-
-/* background */
-
-.page-greeting-bg {
-  background: url("../img/mountain.jpg") no-repeat;
-  background-size: 100% auto;
-  padding: 51px 371px 82px;
-  text-align: center;
+.clear-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.catalog-bg {
-  background: url("../img/mountain-blur.jpg") no-repeat;
-  background-size: 100% auto;
-  padding: 35px 72px 83px;
+.title-bold {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
-.subscription-bg {
-  background: url("../img/valley-blur.jpg") no-repeat;
-  background-size: 100% auto;
-  padding: 93px 200px;
-  color: #fff;
+.descriptions {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333;
 }
 
-/* link */
+/* total */
+
+.page-header {
+  padding: 0 72px 0 60px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
 
 .navigation-link {
   display: block;
@@ -97,27 +104,130 @@ a {
   color: #000;
 }
 
-.breadcrumbs-link {
-  font-size: 16px;
-  line-height: 21px;
-  color: #fff;
+.navigation-main {
+  width: 420px;
+  margin-right: 50px;
 }
 
-.pagination-link {
-  padding: 17.5px;
+.navigation-main-item {
+  padding: 13px 0 14px;
+  margin-right: 9px;
+}
+
+.navigation-main-link {
+  padding: 6px 12px;
+}
+
+.navigation-user {
+  align-items: center;
+  width: 300px;
+  margin-left: auto;
+}
+
+.navigation-user-link {
+  padding: 10px;
+}
+
+.navigation-user-item {
+  margin: 0;
+  width: 38px;
+  height: 38px;
+}
+
+.subscription {
+  padding: 94px 200px;
+  text-align: center;
+}
+
+.subscription-title {
+  margin-bottom: 30px;
+}
+
+.subscription-description {
+  margin: 0 0 40px 0;
+}
+
+.subscription-input {
+  background-color: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
+  border: 0;
+  margin: 0;
+}
+
+.page-footer {
+  display: flex;
+  padding: 25px 50px 25px 57px;
+}
+
+.page-footer:nth-child(n) {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social {
+  width: 175px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-social-item {
+  margin-right: 5px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.footer-contacts {
+  width: 381px;
+  margin: 0 186px;
+  text-align: center;
+}
+
+.footer-contacts-number {
   display: block;
-  font-size: 20px;
-  line-height: 26px;
+  padding: 15px;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000;
 }
 
-/* title */
+.footer-htmlacademy {
+  margin-left: auto;
+}
 
-.title-bold {
-  margin: 0 0 20px 0;
-  font-weight: 700;
-  font-size: 30px;
+.footer-link-htmlacademy {
+  display: block;
+  padding: 15px 22px;
+}
+
+/* main page */
+
+.greeting-text {
+  display: block;
+  margin: 0 auto;
+}
+
+.greeting-description {
+  margin-top: 25px;
+  margin-bottom: 0;
   line-height: 36px;
-  text-transform: uppercase;
+  color: #333;
+}
+
+.page-greeting {
+  padding: 62px 240px 80px;
+  text-align: center;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-item {
+  padding: 85px 75px 77px;
 }
 
 .advantages-title {
@@ -125,11 +235,47 @@ a {
   line-height: 28px;
 }
 
-.inner-headder-title {
+.advantages-number {
+  margin: 25px 0 28px;
+  text-transform: uppercase;
+}
+
+.advantages-item-img {
+  display: flex;
+  padding: 0;
+}
+
+.hotels {
+  padding: 91px 240px;
+  text-align: center;
+}
+
+.hotels-title {
+  margin-bottom: 30px;
+}
+
+.hotels-description {
+  margin: 0 0 65px 0;
+  color: #333;
+}
+
+/* inner page */
+
+.inner-header-title {
   text-transform: none;
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.catalog-filter {
+  display: flex;
 }
 
 .catalog-filter-title {
@@ -137,8 +283,23 @@ a {
   font-weight: 700;
 }
 
+.control-label {
+  color: #fff;
+}
+
+.sorting-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.sorting-item {
+  margin-left: 8px;
+  box-sizing: border-box;
+}
+
 .sorting {
   display: flex;
+  align-items: center;
   font-size: 18px;
   line-height: 23px;
   color: #333;
@@ -148,65 +309,90 @@ a {
 .sorting-title {
   line-height: 39px;
   color: #000;
-  margin: 4px 192px 4px 0;
+  margin: 0;
+  margin-right: auto;
 }
 
 .select-control {
   font: inherit;
   width: 287px;
   height: 48px;
-  border: 2px solid #E6E6E6;
+  border: 2px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
 }
 
+.products {
+  margin: 0 72px;
+}
+
+.product-card {
+  padding: 28px 0 30px;
+  border-top: 2px solid #e6e6e6;
+}
+
 .product-card-title {
   margin: 0;
-  padding: 10px 15px;
   text-transform: none;
   font-size: 24px;
   line-height: 31px;
-}
-
-/* description */
-
-.descriptions {
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  color: #333;
-}
-
-.greeting-description {
-  margin: 5px 0 0 0;
-  line-height: 36px;
-  color: #333;
-}
-
-.advantages-number {
-  margin: 5px 0 28px;
-  text-transform: uppercase;
-}
-
-.hotels-description {
-  margin: 0 0 65px 0;
-  color: #333;
-}
-
-.subscription-description {
-  margin: 0 0 40px 0;
-}
-
-.control-label {
-  color: #fff;
 }
 
 .product-card-rating {
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.product-star {
+  margin: 0;
+}
+
+.product-more {
+  padding: 30px 215px;
+  border-top: 2px solid #e6e6e6;
+}
+
+.pagination {
+  display: flex;
+  margin: 0 72px;
+  padding: 30px 0;
+  border-top: 2px solid #e6e6e6;
+}
+
+.pagination-list {
+  display: flex;
+  margin-right: 298px;
+}
+
+.pagination-item {
+  width: 55px;
+  height: 55px;
+  margin-right: 7px;
+  border-radius: 4px;
+}
+
+.pagination-link {
+  padding: 17px;
+  display: block;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.sorting-type-form {
+  display: flex;
+  align-items: center;
+  width: 386px;
+}
+
+.pagination-select-control {
+  margin-left: auto;
+  width: 160px;
+  height: 48px;
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -214,7 +400,7 @@ a {
   color: #333;
 }
 
-/* list */
+/* colors */
 
 .white-text {
   color: #fff;
@@ -226,6 +412,10 @@ a {
 
 .light-blue {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.blue-bg {
+  background-color: #83b3d3;
 }
 
 /* button */
@@ -246,26 +436,35 @@ a {
   margin: 0;
 }
 
+.subscription-button {
+  border-radius: 0px 10px 10px 0px;
+}
+
 .hotels-link {
   font-size: 20px;
   line-height: 36px;
   border-radius: 10px;
 }
 
-.subscription-button {
-  border-radius: 0px 10px 10px 0px;
-}
-
-.blue-bg {
-  background-color: #83B3D3;
-}
-
 .catalog-filter-reset {
   background: none;
 }
 
+.sorting-button-icon {
+  display: block;
+  padding: 15px 14px;
+  width: 16px;
+  height: 14px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.sorting-button-selected {
+  border-color: #000;
+}
+
 .button-favourites-added {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .pagination-current {
@@ -273,239 +472,23 @@ a {
   color: #000;
 }
 
-/* input */
+/* background */
 
-.subscription-input {
-  background-color: #F2F2F2;
-  border-radius: 10px 0px 0px 10px;
-  border: 0;
-  margin: 0;
+.page-greeting-bg {
+  background: url("../img/mountain.jpg") no-repeat;
+  background-size: 100% auto;
+  padding: 51px 0 82px;
 }
 
-/* footer */
-
-.footer-contacts-number {
-  display: block;
-  padding: 15px;
-  max-width: 361px;
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000;
+.catalog-bg {
+  background: url("../img/mountain-blur.jpg") no-repeat;
+  background-size: 100% auto;
+  padding: 35px 72px 83px;
 }
 
-/* placement */
-
-.page-header {
-  margin: 0 72px 0 62px;
-}
-
-.navigation {
-  display: flex;
-}
-
-.navigation-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation-main {
-  width: 420px;
-  margin-right: 50px;
-}
-
-.navigation-main-link {
-  padding: 6px 12px;
-  margin: 13.5px 9px 13.5px 0;
-}
-
-.navigation-user {
-  align-items: center;
-  width: 300px;
-  margin-left: auto;
-}
-
-.navigation-user-link {
-  padding: 10px;
-}
-
-.navigation-user-item {
-  margin: 0;
-  min-width: 38px;
-  min-height: 38px;
-}
-
-.greeting-text {
-  display: block;
-  margin: 0 auto;
-}
-
-.page-greeting {
-  display: flex;
-  flex-direction: column;
-  padding: 62px 240px 80px;
-  text-align: center;
-}
-
-.advantages-list {
-  text-align: center;
-}
-
-.advantages-item {
-  display: flex;
-  flex-direction: column;
-  padding: 98px 90px 77px;
-}
-
-.advantages-item-img {
-  padding: 0;
-}
-
-.advantages-img-svg {
-  margin: 0 auto 20px;
-}
-
-.advantages-description {
-  margin: 0;
-}
-
-.hotels {
-  display: flex;
-  flex-direction: column;
-  padding: 91px 240px;
-  text-align: center;
-}
-
-.hotels-title {
-  margin-bottom: 30px;
-}
-
-.subscription {
-  display: flex;
-  flex-direction: column;
-  padding: 94px 200px;
-  text-align: center;
-}
-
-.subscription-title {
-  margin-bottom: 30px;
-}
-
-.catalog-filter {
-  display: flex;
-}
-
-.sorting-list {
-  display: flex;
-  margin-left: auto;
-}
-
-.sorting-item {
-  padding: 15px 14px;
-  margin-left: 8px;
-  border: 2px solid #E6E6E6;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.sorting-item-selected {
-  border-color: #000;
-}
-
-.sorting-button-icon {
-  display: block;
-  width: 16px;
-  height: 14px;
-}
-
-.products {
-  margin: 0 72px;
-}
-
-.product-card {
-  padding: 28px 0 30px;
-  border-top: 2px solid #E6E6E6;
-}
-
-.product-star {
-  margin: 0;
-}
-
-.product-more {
-  padding: 30px 215px;
-  border-top: 2px solid #E6E6E6;
-}
-
-.pagination {
-  display: flex;
-  margin: 0 72px;
-  padding: 30px 0;
-  border-top: 2px solid #E6E6E6;
-}
-
-.page-footer {
-  display: flex;
-  padding: 25px 50px 25px 57px;
-}
-
-.pagination-list {
-  display: flex;
-  margin-right: 298px;
-}
-
-.pagination-item {
-  width: 55px;
-  height: 55px;
-  margin-right: 7px;
-  border-radius: 4px;
-}
-
-.sorting-type-form {
-  display: flex;
-  align-items: center;
-  width: 386px;
-}
-
-.pagination-select-control {
-  margin-left: auto;
-  width: 160px;
-  height: 48px;
-  border: 2px solid #E6E6E6;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.footer-contacts {
-  width: 381px;
-  margin: 0 161px;
-  text-align: center;
-}
-
-.footer-htmlacademy {
-  margin-left: auto;
-}
-
-.footer-social {
-  display: flex;
-  align-items: center;
-  width: 200px;
-}
-
-.footer-social-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer-social-item {
-  margin-right: 5px;
-  min-width: 40px;
-  min-height: 40px;
-}
-
-.footer-link-htmlacademy {
-  display: block;
-  padding: 15px 22px;
+.subscription-bg {
+  background: url("../img/valley-blur.jpg") no-repeat;
+  background-size: 100% auto;
+  padding: 93px 200px;
+  color: #fff;
 }
