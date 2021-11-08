@@ -11,77 +11,77 @@
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list navigation-main clear-list">
-          <li class="navigation-item navigation-main-item">
+          <li class="navigation-main-item">
             <a class="navigation-link navigation-main-link" href="index.html">Главная</a>
           </li>
-          <li class="navigation-item navigation-main-item">
+          <li class="navigation-main-item">
             <a class="navigation-link navigation-main-link" href="about.html">О Седоне</a>
           </li>
-          <li class="navigation-item navigation-main-item">
+          <li class="navigation-main-item">
             <a class="navigation-link navigation-main-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
         <a class="navigation-logo" href="index.html"><span class="visually-hidden">Значёк сайта</span></a>
         <ul class="navigation-list navigation-user clear-list">
-          <li class="navigation-item navigation-user-item">
+          <li class="navigation-user-item">
             <a class="navigation-link navigation-user-link" href="#">
               <span class="visually-hidden">
               Поиск
               </span>
             </a>
           </li>
-          <li class="navigation-item navigation-user-item">
+          <li class="navigation-user-item">
             <a class="navigation-link navigation-user-link" href="#">
               <span class="visually-hidden">
               Избранное
               </span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li>
             <a class="navigation-link navigation-user-link button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main-inner">
+    <main>
       <div class="catalog-bg">
-        <header class="inner-header white-text">
+        <header class="white-text">
           <h1 class="inner-header-title title-bold">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs clear-list">
-            <li class="breadcrumbs-item">
+          <ul class="clear-list">
+            <li>
               <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
-            <li class="breadcrumbs-item">
+            <li>
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
         </header>
 
-        <section class="catalog-products white-text">
+        <section class="white-text">
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
-              <ul class="catalog-filter-list clear-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
+              <ul class="clear-list">
+                <li>
+                  <label>
                     <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
                     <span class="control-mark"></span>
                     <span class="control-label descriptions">Бассейн</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
+                <li>
+                  <label>
                     <input class="visually-hidden control-input" type="checkbox" name="park" checked>
                     <span class="control-mark"></span>
                     <span class="control-label descriptions">Парковка</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
+                <li>
+                  <label>
                     <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
                     <span class="control-mark"></span>
                     <span class="control-label descriptions">Wi-Fi</span>
@@ -91,23 +91,23 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
-              <ul class="catalog-filter-list clear-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
+              <ul class="clear-list">
+                <li>
+                  <label>
                     <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotel" checked>
                     <span class="control-mark"></span>
                     <span class="control-label descriptions">Гостиница</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
+                <li>
+                  <label>
                     <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motel">
                     <span class="control-mark"></span>
                     <span class="control-label descriptions">Мотель</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
+                <li>
+                  <label>
                     <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="apartments">
                     <span class="control-mark"></span>
                     <span class="control-label descriptions">Апартаменты</span>
@@ -135,8 +135,8 @@
       </div>
 
       <section class="sorting">
-        <h2 class="sorting-title title-bold">Найдено гостиниц: <output class="sorting-quantity">38</output></h2>
-        <form class="sorting-type">
+        <h2 class="sorting-title title-bold">Найдено гостиниц: <output>38</output></h2>
+        <form>
           <label class="visually-hidden" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
             <option value="popular">Сначала популярное</option>
@@ -235,14 +235,14 @@
             <a class="pagination-link blue-bg" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link blue-bg pagitation-more" href="#">...</a>
+            <a class="pagination-link blue-bg" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link blue-bg" href="#">10</a>
           </li>
         </ul>
         <form class="sorting-type-form">
-          <label class="pagination-inpage descriptions" for="sorting-card">Гостиниц на странице:</label>
+          <label class="descriptions" for="sorting-card">Гостиниц на странице:</label>
           <select class="pagination-select-control" id="sorting-card" name="sorting">
             <option value="4">4</option>
             <option value="8">8</option>
@@ -294,7 +294,7 @@
       <section class="footer-htmlacademy">
         <h2 class="visually-hidden">Сделано в .html academy</h2>
         <a class="footer-link-htmlacademy" href="https://htmlacademy.ru/">
-          <img class="footer-logo-htmlacademy" src="img/logo-htmlacademy.svg" width="115" height="34" alt="Перейти на сайт htmlacademy.ru">
+          <img src="img/logo-htmlacademy.svg" width="115" height="34" alt="Перейти на сайт htmlacademy.ru">
         </a>
       </section>
     </footer>

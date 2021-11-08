@@ -113,8 +113,6 @@ a {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
 .navigation-link {
@@ -150,7 +148,6 @@ a {
 }
 
 .navigation-user-item {
-  margin: 0;
   width: 38px;
   height: 38px;
 }
@@ -276,7 +273,8 @@ a {
 }
 
 .hotels-description {
-  margin: 0 0 65px 0;
+  margin-top: 0;
+  margin-bottom: 65px;
   color: #333;
 }
 
