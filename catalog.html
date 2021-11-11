@@ -38,7 +38,7 @@
             </a>
           </li>
           <li>
-            <a class="navigation-link navigation-user-link button" href="#">Хочу сюда!</a>
+            <a class="navigation-link navigation-user-button button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -48,9 +48,9 @@
       <div class="catalog-bg">
         <header class="white-text">
           <h1 class="inner-header-title title-bold">Гостиницы Седоны</h1>
-          <ul class="clear-list">
+          <ul class="breadcrumbs-list clear-list">
             <li>
-              <a class="breadcrumbs-link" href="index.html">
+              <a class="breadcrumbs-link breadcrumbs-img" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
@@ -66,21 +66,21 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="clear-list">
-                <li>
+                <li class="catalog-filter-list">
                   <label>
                     <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
                     <span class="control-mark"></span>
                     <span class="control-label descriptions">Бассейн</span>
                   </label>
                 </li>
-                <li>
+                <li class="catalog-filter-list">
                   <label>
                     <input class="visually-hidden control-input" type="checkbox" name="park" checked>
                     <span class="control-mark"></span>
                     <span class="control-label descriptions">Парковка</span>
                   </label>
                 </li>
-                <li>
+                <li class="catalog-filter-list">
                   <label>
                     <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
                     <span class="control-mark"></span>
@@ -92,21 +92,21 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="clear-list">
-                <li>
+                <li class="catalog-filter-list">
                   <label>
                     <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotel" checked>
                     <span class="control-mark"></span>
                     <span class="control-label descriptions">Гостиница</span>
                   </label>
                 </li>
-                <li>
+                <li class="catalog-filter-list">
                   <label>
                     <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motel">
                     <span class="control-mark"></span>
                     <span class="control-label descriptions">Мотель</span>
                   </label>
                 </li>
-                <li>
+                <li class="catalog-filter-list">
                   <label>
                     <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="apartments">
                     <span class="control-mark"></span>
@@ -126,7 +126,7 @@
                 <span class="visually-hidden">Изменить максимальную цену</span>
               </button>
             </fieldset>
-            <div>
+            <div class="catalog-filter-buttons">
               <button class="catalog-filter-select button blue-bg" type="submit">Применить</button>
               <button class="catalog-filter-reset button" type="reset">Сбросить</button>
             </div>
@@ -199,7 +199,7 @@
             <b class="product-card-type descriptions">Апартаменты</b>
             <b class="product-card-price descriptions">От 2000 ₽</b>
             <a href="#" class="product-card-info button">Подробнее</a>
-            <a href="#" class="product-card-favourites button blue-bg button-favourites-added">В избранное</a>
+            <a href="#" class="product-card-favourites button blue-bg button-favourites-added">В избранном</a>
             <b class="product-card-rating descriptions">Рейтинг: 9,2</b>
           </li>
           <li class="product-card">
@@ -223,22 +223,22 @@
       <section class="pagination">
         <ul class="pagination-list clear-list">
           <li class="pagination-item">
-            <a class="pagination-link blue-bg pagination-current">1</a>
+            <a class="pagination-link blue-bg pagination-current button-similar">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link blue-bg" href="#">2</a>
+            <a class="pagination-link blue-bg button-similar" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link blue-bg" href="#">3</a>
+            <a class="pagination-link blue-bg button-similar" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link blue-bg" href="#">4</a>
+            <a class="pagination-link blue-bg button-similar" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link blue-bg" href="#">...</a>
+            <a class="pagination-link blue-bg button-similar" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link blue-bg" href="#">10</a>
+            <a class="pagination-link blue-bg button-similar" href="#">10</a>
           </li>
         </ul>
         <form class="sorting-type-form">
