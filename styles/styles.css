@@ -183,22 +183,23 @@ a {
 }
 
 .footer-social {
-  width: 175px;
+  width: 128px;
 }
 
 .footer-social-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
 }
 
 .footer-social-item {
-  min-width: 40px;
-  min-height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .footer-contacts {
   width: 381px;
-  margin: 0 175px;
+  margin-left: 221px;
   text-align: center;
 }
 
@@ -243,7 +244,6 @@ a {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
 }
 
 .adventages-item-grid {
@@ -287,8 +287,7 @@ a {
 /* inner page */
 
 .inner-header-title {
-  display: block;
-  height: 68px;
+  margin-bottom: -7px;
   text-transform: none;
   font-size: 60px;
   line-height: 78px;
@@ -317,7 +316,7 @@ a {
 
 .catalog-filter {
   display: flex;
-  margin-top: 45px;
+  margin-top: 42px;
 }
 
 .catalog-filter-group {
@@ -327,7 +326,7 @@ a {
   padding: 0;
 }
 
-.catalog-filter-group:nth-child(3) {
+.catalog-filter-prise {
   margin-left: auto;
   margin-right: 80px;
 }
@@ -395,18 +394,23 @@ a {
 .product-card {
   display: grid;
   grid-template-columns: 180px 20px 150px 160px 344px 160px;
-  grid-template-rows: 30px 23px 30px 37px;
+  grid-template-rows: 0.8fr 23px 30px 37px;
   column-gap: 8px;
   padding: 30px 0 30px;
   border-top: 1px solid #e6e6e6;
 }
 
+.product-card-link {
+  grid-row: 1/-1;
+}
+
 .product-card-title {
   margin: 0;
   grid-column: 3/6;
+  grid-row: 1/2;
   text-transform: none;
   font-size: 24px;
-  line-height: 31px;
+  line-height: 30px;
 }
 
 .product-card-type {
