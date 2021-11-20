@@ -99,23 +99,23 @@
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="clear-list">
                 <li class="catalog-filter-list">
-                  <label>
+                  <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
-                    <span class="control-mark"></span>
+                    <span class="control-mark-checkbox"></span>
                     <span class="control-label descriptions">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-list">
-                  <label>
+                  <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="park" checked>
-                    <span class="control-mark"></span>
+                    <span class="control-mark-checkbox"></span>
                     <span class="control-label descriptions">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-list">
-                  <label>
+                  <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
-                    <span class="control-mark"></span>
+                    <span class="control-mark-checkbox"></span>
                     <span class="control-label descriptions">Wi-Fi</span>
                   </label>
                 </li>
@@ -125,23 +125,23 @@
               <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="clear-list">
                 <li class="catalog-filter-list">
-                  <label>
+                  <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotel" checked>
-                    <span class="control-mark"></span>
+                    <span class="control-mark-radio"></span>
                     <span class="control-label descriptions">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-list">
-                  <label>
+                  <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motel">
-                    <span class="control-mark"></span>
+                    <span class="control-mark-radio"></span>
                     <span class="control-label descriptions">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-list">
-                  <label>
+                  <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="apartments">
-                    <span class="control-mark"></span>
+                    <span class="control-mark-radio"></span>
                     <span class="control-label descriptions">Апартаменты</span>
                   </label>
                 </li>
@@ -183,12 +183,14 @@
       <section class="sorting">
         <h2 class="sorting-title title-bold">Найдено гостиниц: <output>38</output></h2>
         <form>
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control select-inner" id="sorting" name="sorting">
-						<option value="cheap">Сначала дешёвые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
+					<div class="select">
+						<label class="visually-hidden" for="sorting">Сортировка</label>
+						<select class="select-control select-inner" id="sorting" name="sorting">
+							<option value="cheap">Сначала дешёвые</option>
+							<option value="popular">Сначала популярные</option>
+							<option value="expensive">Сначала дорогие</option>
+						</select>
+					</div>
           <button class="visually-hidden" type="submit">Отсортировать продукты</button>
         </form>
         <ul class="sorting-list clear-list">
