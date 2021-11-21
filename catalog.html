@@ -64,6 +64,34 @@
                 Избранное
               </span>
             </a>
+						<div class="popover popover-like">
+							<div class="popover-content">
+								<h2 class="visually-hidden">Избранное</h2>
+								<ul class="popover-list clear-list">
+									<li class="popover-item">
+										<a class="popover-item-info inner-link-states" href="">
+											<img src="/img/desert-quail-inn.jpg" alt="Мотель Desert Quail Inn" class="popover-product-img">
+											<h3 class="popover-product-title">Desert Quail Inn</h3>
+											<p class="popover-product-type">Мотель</p>
+										</a>
+										<a class="popover-product-delete icons-link" href="">
+											<svg class="icons delete-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.3 4.3H2.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H5.4V5.4h9.1v11.4ZM8.2 3.2h3.4c.3 0 .6-.3.6-.6S12 2 11.7 2H8.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" fill="#000"/><path d="M8.2 14c.3 0 .6-.3.6-.6V7.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM11.7 14c.3 0 .6-.3.6-.6V7.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/></svg>
+										</a>
+									</li>
+									<li class="popover-item">
+										<a class="popover-item-info inner-link-states" href="">
+											<img src="/img/villas-at-poco-diablo.jpg" alt="Апартаменты Villas at Poco Diablo" class="popover-product-img">
+											<h3 class="popover-product-title">Villas at Poco Diablo</h3>
+											<p class="popover-product-type">Апартаменты</p>
+										</a>
+										<a class="popover-product-delete icons-link" href="">
+											<svg class="icons delete-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.3 4.3H2.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H5.4V5.4h9.1v11.4ZM8.2 3.2h3.4c.3 0 .6-.3.6-.6S12 2 11.7 2H8.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" fill="#000"/><path d="M8.2 14c.3 0 .6-.3.6-.6V7.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM11.7 14c.3 0 .6-.3.6-.6V7.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/></svg>
+										</a>
+									</li>
+								</ul>
+								<a class="popover-link button-similar states-button-brown" href="">Все избранные</a>
+							</div>
+						</div>
           </li>
           <li class="navigation-item-button">
             <a class="navigation-link-button button states-button-brown" href="#">Хочу сюда!</a>
@@ -312,13 +340,12 @@
       <section class="subscription subscription-inner">
         <h2 class="subscription-title title-bold">Подпишитесь на рассылку</h2>
         <p class="subscription-description subscription-description-inner">
-          Только полезная информация и никакого спама,
-          честное бойскаутское!
+          Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="POST">
 					<p class="subscription-email-wrap">
 						<label class="visually-hidden" for="subscription-email">Email</label>
-						<input class="subscription-input" type="email" name="subscription-email" placeholder="Ваш e-mail" required>
+						<input class="style-input-gray" type="email" name="subscription-email" placeholder="Ваш e-mail" required>
 					</p>
           <button class="subscription-button button states-button-blue blue-bg" type="submit">Подписаться</button>
         </form>
@@ -384,6 +411,58 @@
         </a>
       </section>
     </footer>
+
+		<div class="modal-container invisible">
+			<div class="modal modal-hotels">
+				<div class="modal-wrap">
+					<h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+					<button class="modal-close-button icons-link">
+						<svg class="icons close-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 4.3 15.7 3 10 8.7 4.3 3 3 4.3 8.7 10 3 15.7 4.3 17l5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7L17 4.3Z"/></svg>
+						<span class="visually-hidden">Закрыть</span>
+					</button>
+				</div>
+				<form class="modal-hotels-form" action="https://echo.htmlacademy.ru/" method="post">
+					<label class="modal-label" for="date-start">Дата заезда:</label>
+					<span class="modal-input-wrapper date">
+						<input class="modal-input modal-input-date style-input-gray" type="date" name="date-start" id="date-start" placeholder="Укажите дату" value="2020-04-27" required>
+						<span class="input-message incorrect visible">Мы не можем отправить вас в прошлое.</span>
+					</span>
+					<label class="modal-label" for="date-end">Дата выезда:</label>
+					<span class="modal-input-wrapper date">
+						<input class="modal-input modal-input-date style-input-gray" type="date" name="date-end" id="date-end" placeholder="Укажите дату" value="2021-09-01" required>
+						<span class="input-message incorrect">Мы не можем отправить вас в прошлое.</span>
+						<span class="input-message not-busy visible">На эти даты есть свободные номера. Пока есть.</span>
+						<span class="input-message busy"></span>
+					</span>
+					<label class="modal-label" for="human-count">Взрослые:</label>
+					<span class="modal-input-wrapper">
+						<button class="modal-minus icons-link count-button" type="button">
+							<svg class="icons" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
+						</button>
+						<input class="modal-input modal-input-count style-input-gray" type="number" name="human-count" id="human-count" value="2" required>
+						<button class="modal-plus icons-link count-button" type="button">
+							<svg class="icons" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+						</button>
+					</span>
+					<span class="modal-child-info clicked">
+						<label class="modal-label label-child" for="child-count">Дети:</label>
+						<div class="info-text">
+							Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+						</div>
+					</span>
+					<span class="modal-input-wrapper">
+						<button class="modal-minus icons-link count-button" type="button">
+							<svg class="icons" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
+						</button>
+						<input class="modal-input modal-input-count style-input-gray" type="number" name="child-count" id="child-count" value="1">
+						<button class="modal-plus icons-link count-button" type="button">
+							<svg class="icons" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+						</button>
+					</span>
+					<button class="modal-search-button states-button-blue button-similar blue-bg">Найти</button>
+				</form>
+			</div>
+		</div>
   </div>
 </body>
 </html>

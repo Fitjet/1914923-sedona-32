@@ -297,7 +297,7 @@ top: -21px;
 }
 
 .subscription {
-  padding: 94px 200px;
+  padding: 92px 200px 94px;
   text-align: center;
 }
 
@@ -306,13 +306,13 @@ top: -21px;
 }
 
 .subscription-description {
-  margin: 0 0 40px 0;
+  margin: 0 0 47px 0;
 }
 
 .page-footer {
   display: flex;
   align-items: center;
-  padding: 25px 50px 25px 60px;
+  padding: 22px 50px 28px 60px;
 }
 
 .footer-social {
@@ -359,6 +359,113 @@ top: -21px;
 	top: 4px;
 }
 
+.modal-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-color: rgba(242, 242, 242, 0.8);
+	z-index: 1;
+}
+
+.modal {
+	position: relative;
+	margin: auto;
+	font-size: 18px;
+	font-weight: 700;
+	background-color: #fff;
+	box-sizing: border-box;
+	box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+	border-radius: 30px;
+}
+
+.modal-hotels {
+	width: 715px;
+	min-height: 210px;
+}
+
+.modal-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 54px 70px 54px 67px;
+}
+
+.modal-title {
+	margin: 0;
+	font-size: 30px;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+
+.modal-close-button {
+	border: 0;
+	border-radius: 50%;
+	width: 53px;
+	height: 53px;
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+
+.modal-hotels-form {
+	padding: 0 70px 70px;
+	display: grid;
+	grid-template-columns: 155px 133px 56px 97px 133px;
+	grid-template-rows: 50px 50px 50px 60px;
+	row-gap: 40px;
+}
+
+.modal-label {
+	margin: auto 0;
+}
+
+.modal-child-info {
+	grid-column: 4/5;
+	display: flex;
+	position: relative;
+}
+
+.modal-child-info::after {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 14px;
+	left: 54px;
+	border-radius: 50%;
+	background-color: #83b3d3;
+	background-image: url("../img/icons/info.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 15px 15px;
+	content: "";
+}
+
+.label-child {
+	grid-column: 4/5;
+	grid-row: 3/4;
+}
+
+.modal-input-wrapper.date {
+	grid-column: 2/-1;
+}
+
+.input-message {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 43px;
+	color: #333;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 400;
+}
+
+.input-message.incorrect {
+	color: #ff5757;
+}
+
 /* main page */
 
 .greeting-text {
@@ -394,6 +501,10 @@ top: -21px;
 
 .advantages-item {
   padding: 98px 75px 71px;
+}
+
+.advantages-item.blue-bg .descriptions {
+	padding: 0 15px;
 }
 
 .advantages-item-img {
@@ -441,7 +552,7 @@ top: -21px;
 }
 
 .hotels {
-  padding: 89px 240px;
+  padding: 89px 240px 91px;
   text-align: center;
 }
 
@@ -812,21 +923,31 @@ top: -21px;
 	margin: 0;
 }
 
-.subscription-input {
+.style-input-gray {
   background-color: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
 	height: 100%;
 	width: 100%;
 	padding: 0 22px;
 	box-sizing: border-box;
+	font: inherit;
 	font-size: 17px;
 	color: #000;
   border: 0;
   margin: 0;
 }
 
-.subscription-input::placeholder {
+.style-input-gray::placeholder {
+	font-size: 18px;
+	line-height: 26px;
+	color: #000;
 	opacity: 0.6;
+}
+
+.modal-search-button {
+	grid-column: 1/-1;
+	font-size: 20px;
+	border-radius: 10px;
 }
 
 .control {
@@ -957,6 +1078,86 @@ top: -21px;
 	right: -10px;
 }
 
+.modal-input {
+	position: relative;
+	border-radius: 4px;
+	font: inherit;
+}
+
+.modal-input-date {
+	padding: 0 13px 2px 18px;
+}
+
+.modal-input-date::-webkit-calendar-picker-indicator {
+	background-image: url("../img/icons/date.svg");
+	opacity: 0.3;
+	width: 19px;
+	height: 19px;
+}
+
+.modal-input-wrapper {
+	position: relative;
+}
+
+.count-button {
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	top: 12px;
+	bottom: 0;
+	width: 25px;
+	height: 25px;
+	border-radius: 4px;
+	opacity: 0.3;
+	z-index: 1;
+}
+
+.modal-minus {
+	left: 13px;
+}
+
+.modal-plus {
+	right: 13px;
+}
+
+.modal-input-count {
+	text-align: center;
+}
+
+.modal-input::-webkit-inner-spin-button,
+.modal-input::-webkit-outer-spin-button {
+	appearance: none;
+}
+
+.info-text {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	width: 256px;
+	min-height: 30px;
+	padding: 19px 22px 24px;
+	box-sizing: border-box;
+	top: 54px;
+	left: -61px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	align-items: center;
+	color: #fff;
+	background: #333;
+	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+.info-text::before {
+	position: absolute;
+	top: -19px;
+	left: 117px;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #333;
+	content: "";
+}
+
 /* colors */
 
 .white-text {
@@ -1044,15 +1245,15 @@ top: -21px;
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.popover-product-delete:hover .delete-icon {
+.popover-product-delete:hover .icons {
 	fill-opacity: 1;
 }
 
-.popover-product-delete:focus .delete-icon {
+.popover-product-delete:focus .icons {
 	fill-opacity: 1;
 }
 
-.popover-product-delete:active .delete-icon {
+.popover-product-delete:active .icons {
 	fill-opacity: 0.1;
 }
 
@@ -1184,17 +1385,17 @@ outline: none;
 	box-shadow: none;
 }
 
-.subscription-input:hover {
+.style-input-gray:hover {
 	background-color: #e5e5e5;
 }
 
-.subscription-input:focus:placeholder-shown {
+.style-input-gray:focus:placeholder-shown {
 	background-color: #e5e5e5;
 	box-shadow: 0 0 0 3px #83b3d3;
 	outline: none;
 }
 
-.subscription-input:focus {
+.style-input-gray:focus {
 	background-color: #fff;
 	box-shadow: inset 0 0 0 2px #000;
 	outline: none;
@@ -1244,8 +1445,54 @@ outline: none;
 	border: none;
 }
 
+.modal-close-button:hover {
+	background-color: #e5e5e5;
+}
+
+.modal-close-button:focus:not(:active) {
+	background-color: #e5e5e5;
+	box-shadow: 0 0 0 3px #83b3d3;
+	outline: none;
+}
+
+.modal-close-button:active {
+	background-color: #e5e5e5;
+	outline: none;
+}
+
+.modal-close-button:active .close-icon {
+	fill-opacity: 0.3;
+}
+
+.count-button:hover {
+	opacity: 1;
+}
+
+.count-button:focus:not(:active) {
+	opacity: 1;
+	box-shadow: inset 0 0 0 3px #83b3d3;
+	outline: none;
+}
+
+.count-button:active {
+	opacity: 0.2;
+	outline: none;
+}
+
+.modal-child-info.clicked::after {
+	background-color: #68a2ca;
+}
+
 /* show element */
 
-.popover-open {
+.modal-container.invisible {
+	display: none;
+}
+
+.modal-child-info.clicked .info-text{
+	display: block;
+}
+
+.visible {
 	display: block;
 }
